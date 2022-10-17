@@ -130,19 +130,28 @@ img {
 }
 
 .auth-nav .link {
+  display: flex;
+  align-items: center;
   fill: var(--primary-text-color);
   color: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
+.auth-nav .svg {
+  margin-right: 10px;
+}
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
+
 
 /* section decision */
 .hero {
@@ -302,7 +311,7 @@ img {
 }
 
 .command-list .text {
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 
   color: var(--primary-text-color);
   font-weight: 400;
@@ -314,6 +323,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 30px;
 }
 
 .command-social-link {
@@ -322,7 +332,6 @@ img {
   height: 44px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
   border-radius: 50%;
   fill: var(--background-color-icon);
   background-color: var(--white-text-color);
@@ -351,12 +360,13 @@ img {
 .clients-link {
   display: flex;
   width: 170px;
-  height: 72px;
+  height: 92px;
   justify-content: center;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
   border: 1px solid var(--background-color-icon);
+  border-radius: 4px;
   fill: var(--background-color-icon);
   cursor: pointer;
 }
@@ -364,7 +374,7 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--accent-text-color);
-  border: 1px solid var(--accent-text-color);
+  border-color: var(--accent-text-color);
 }
 /* footer */
 .footer {
@@ -442,7 +452,6 @@ img {
   height: 44px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
   border-radius: 50%;
   fill: var(--white-text-color);
   background-color: var(--background-footer-color-icon);
@@ -518,14 +527,16 @@ img {
 .example-list .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.example-list .item:hover,
-.example-list .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .example-list .link {
+  display: block;
   text-decoration: none;
 }
 
+.example-list  .link:hover,
+.example-list  .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .example-list .block {
   padding: 20px 24px;
   border-bottom: 1px solid var(--border-color-portfolio);
